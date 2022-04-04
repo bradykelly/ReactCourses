@@ -163,4 +163,20 @@
       <_ContentIncludedByDefault Remove="ExerciseFiles\CH07\07_05\Start\package.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="ExerciseFiles\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="ExerciseFiles\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="ExerciseFiles\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="ExerciseFiles\**" />
+    </ItemGroup>
+
 </Project>
