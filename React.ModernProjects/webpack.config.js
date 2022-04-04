@@ -2,6 +2,8 @@
 const webpack = require("webpack");
 
 module.exports = (env) => {
+    console.log(env);
+    const isProduction = env === 'production';
     return {
         entry: "./src/index.js",
         mode: "development",
@@ -40,7 +42,7 @@ module.exports = (env) => {
             },
             hot: true
         },
-        devtool: "inline-source-map",
+        devtool: isProduction ? "source-map" : "inline-source-map",
         plugins: [
             new webpack.HotModuleReplacementPlugin()
         ]
