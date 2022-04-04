@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx webpack-dev-server --mode development",
-    "build": "npx webpack --mode development",
+    "dev": "npx webpack-dev-server --mode=development",
+    "build:dev": "npx webpack --mode=development --env=development",
+    "build:prod": "npx webpack --mode=production --env=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
